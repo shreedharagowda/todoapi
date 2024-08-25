@@ -1,0 +1,94 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n\t<modelVersion>4.0.0</modelVersion>\r\n\t<parent>\r\n\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t<artifactId>spring-boot-starter-parent</artifactId>\r\n\t\t<version>2.7.12</version>\r\n\t\t<relativePath/> <!-- lookup parent from repository -->\r\n\t</parent>\r\n\t<groupId>com.company</groupId>\r\n\t<artifactId>todoapp</artifactId>\r\n\t<version>0.0.1-SNAPSHOT</version>\r\n\t<name>todoapp</name>\r\n\t<description>Manage todos</description>\r\n\t<properties>\r\n\t\t<java.version>11</java.version>\r\n\t</properties>\r\n\t<dependencies>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-web</artifactId>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springdoc</groupId>\r\n\t\t\t<artifactId>springdoc-openapi-ui</artifactId>\r\n\t\t\t<version>1.6.4</version>\r\n\t\t</dependency>\r\n\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-devtools</artifactId>\r\n\t\t\t<scope>runtime</scope>\r\n\t\t\t<optional>true</optional>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-test</artifactId>\r\n\t\t\t<scope>test</scope>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-validation</artifactId>\r\n\t\t</dependency>\r\n\t\t   <dependency>\r\n\t\t\t<groupId>com.h2database</groupId>\r\n\t\t\t<artifactId>h2</artifactId>\r\n\t\t\t<scope>runtime</scope>\r\n\t\t</dependency>  \r\n\t\t<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java \r\n\t\t <dependency>\r\n\t\t    <groupId>mysql</groupId>\r\n\t\t    <artifactId>mysql-connector-java</artifactId>\r\n\t\t    <version>8.0.33</version>\r\n\t\t</dependency>  -->\r\n\t\t\t\t\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-data-jpa</artifactId>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-actuator</artifactId>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-security</artifactId>\r\n\t\t</dependency>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-hateoas</artifactId>\r\n\t\t</dependency>\r\n\t</dependencies>\r\n\r\n\t<build>\r\n\t\t<plugins>\r\n\t\t\t<plugin>\r\n\t\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t\t<artifactId>spring-boot-maven-plugin</artifactId>\r\n\t\t\t</plugin>\r\n\t\t</plugins>\r\n\t</build>\r\n\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 8691ac737e75922e993e5dc6b33703d2953eed65)
++++ b/pom.xml	(date 1724323737705)
+@@ -46,14 +46,14 @@
+ 			<groupId>com.h2database</groupId>
+ 			<artifactId>h2</artifactId>
+ 			<scope>runtime</scope>
+-		</dependency>  
++		</dependency>
+ 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java 
+ 		 <dependency>
+ 		    <groupId>mysql</groupId>
+ 		    <artifactId>mysql-connector-java</artifactId>
+ 		    <version>8.0.33</version>
+ 		</dependency>  -->
+-				
++
+ 		<dependency>
+ 			<groupId>org.springframework.boot</groupId>
+ 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"00b2ae58-aa50-42a0-9339-f28360164c0b\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"SWAP_SIDES_IN_COMPARE_BRANCHES\" value=\"true\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2kvJkCRkUzDEwQPGYnoy3iSrApo\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"JUnit.TodoappApplicationTests.executor\": \"Run\",\r\n    \"Maven.todoapp [clean].executor\": \"Run\",\r\n    \"Maven.todoapp [install].executor\": \"Run\",\r\n    \"RequestMappingsPanelOrder0\": \"0\",\r\n    \"RequestMappingsPanelOrder1\": \"1\",\r\n    \"RequestMappingsPanelWidth0\": \"75\",\r\n    \"RequestMappingsPanelWidth1\": \"75\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"Spring Boot.TodoappApplication.executor\": \"Run\",\r\n    \"git-widget-placeholder\": \"mongodb\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/vijay/OneDrive/Desktop/Java/java-spring-boot-mongodb-starter\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Spring Boot.TodoappApplication\">\r\n    <configuration name=\"TodoappApplicationTests\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"todoapp\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.company.todoapp.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.company.todoapp\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.company.todoapp.TodoappApplicationTests\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TodoappApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <option name=\"FRAME_DEACTIVATION_UPDATE_POLICY\" value=\"UpdateClassesAndResources\" />\r\n      <module name=\"todoapp\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.company.todoapp.TodoappApplication\" />\r\n      <option name=\"VM_PARAMETERS\" value=\"--add-opens=java.base/java.nio.charset=ALL-UNNAMED\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"JUnit.TodoappApplicationTests\" />\r\n      <item itemvalue=\"Spring Boot.TodoappApplication\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.TodoappApplicationTests\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.300\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.300\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"00b2ae58-aa50-42a0-9339-f28360164c0b\" name=\"Changes\" comment=\"\" />\r\n      <created>1724158258129</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1724158258129</updated>\r\n      <workItem from=\"1724158259172\" duration=\"6896000\" />\r\n      <workItem from=\"1724214960726\" duration=\"15901000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"org.springframework.beans.factory.UnsatisfiedDependencyException\" package=\"org.springframework.beans.factory\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 8691ac737e75922e993e5dc6b33703d2953eed65)
++++ b/.idea/workspace.xml	(date 1724328156384)
+@@ -4,7 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="00b2ae58-aa50-42a0-9339-f28360164c0b" name="Changes" comment="" />
++    <list default="true" id="00b2ae58-aa50-42a0-9339-f28360164c0b" name="Changes" comment="Added TesT Cases using Mock Data">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -26,6 +29,10 @@
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+   </component>
++  <component name="KubernetesApiPersistence">{}</component>
++  <component name="KubernetesApiProvider">{
++  &quot;isMigrated&quot;: true
++}</component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 5
+ }</component>
+@@ -45,7 +52,7 @@
+     "RequestMappingsPanelWidth1": "75",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "Spring Boot.TodoappApplication.executor": "Run",
+-    "git-widget-placeholder": "mongodb",
++    "git-widget-placeholder": "master",
+     "ignore.virus.scanning.warn.message": "true",
+     "kotlin-language-version-configured": "true",
+     "last_opened_file_path": "C:/Users/vijay/OneDrive/Desktop/Java/java-spring-boot-mongodb-starter",
+@@ -54,6 +61,7 @@
+     "node.js.selected.package.eslint": "(autodetect)",
+     "node.js.selected.package.tslint": "(autodetect)",
+     "nodejs_package_manager_path": "npm",
++    "settings.editor.selected.configurable": "preferences.pluginManager",
+     "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
+@@ -110,6 +118,7 @@
+       <updated>1724158258129</updated>
+       <workItem from="1724158259172" duration="6896000" />
+       <workItem from="1724214960726" duration="15901000" />
++      <workItem from="1724309089200" duration="2201000" />
+     </task>
+     <servers />
+   </component>
+@@ -138,6 +147,10 @@
+         </entry>
+       </map>
+     </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Added TesT Cases using Mock Data" />
++    <option name="LAST_COMMIT_MESSAGE" value="Added TesT Cases using Mock Data" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
