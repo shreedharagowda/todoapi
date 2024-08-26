@@ -6,19 +6,19 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @SuppressWarnings("deprecation")
 @Configuration
-public class SecurityConfigurations  extends WebSecurityConfigurerAdapter {
+public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 
-	    @Override
-	    protected void configure(HttpSecurity httpSecurity) throws Exception {
-	        httpSecurity.authorizeRequests().antMatchers("/").permitAll().and()
-	                .authorizeRequests().antMatchers("/console/**").permitAll().and()
-	                .authorizeRequests().antMatchers("/swagger-ui.html").permitAll();
+  @Override
+  protected void configure(HttpSecurity httpSecurity) throws Exception {
+    httpSecurity.authorizeRequests().antMatchers("/").permitAll().and()
+      .authorizeRequests().antMatchers("/console/**").permitAll().and()
+      .authorizeRequests().antMatchers("/swagger-ui.html").permitAll();
 
-	        httpSecurity.csrf().disable();
-	        httpSecurity.headers().frameOptions().disable();
+    httpSecurity.csrf().disable();
+    httpSecurity.headers().frameOptions().disable();
 
 
-	    }
+  }
 
-	
+
 }
