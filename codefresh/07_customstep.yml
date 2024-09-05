@@ -1,0 +1,23 @@
+version: '1.0'
+stages:
+  - checkout
+  - build
+
+steps:
+  # Git clone step
+  clone_repo:
+    title: Cloning repository
+    type: git-clone
+    repo: "vijaynvb/todoapi"  # Update with your repository
+    revision: "master"
+    git: github
+    stage: checkout
+
+  # Custom Maven build step
+  maven_build:
+    title: Running Maven Build
+    type: <codefresh-username>/my-maven-step:1.0.0  # Use your custom step type
+    arguments:
+      MAVEN_GOAL: 'clean install'
+      WORK_DIR: '/codefresh/volume/todoapi'  # Updated to point to the correct directory
+    stage: build
