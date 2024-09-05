@@ -1,0 +1,31 @@
+version: '1.0'
+stages:
+  - checkout
+  - build
+  - test
+
+steps:
+  clone_repository:
+    title: Cloning Repository
+    type: git-clone
+    repo: "vijaynvb/todoapi"
+    revision: "master"
+    stage: checkout
+
+  build_maven:
+    title: Maven Build
+    type: freestyle
+    stage: build
+    image: maven:3.8.1-jdk-11
+    working_directory: '${{clone_repository}}'
+    commands:
+      - mvn clean install
+
+  test_maven:
+    title: Maven Test
+    type: freestyle
+    stage: test
+    image: maven:3.8.1-jdk-11
+    working_directory: '${{clone_repository}}'
+    commands:
+      - mvn test
