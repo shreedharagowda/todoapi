@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="9.3">
-<file name="D:\Spring Boot\todoapi\src\main\java\com\company\todoapp\configurations\SecurityConfigurations.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<file name="/Users/vijay/Desktop/Intelij/sample_workspace/todoapi/src/main/java/com/company/todoapp/controllers/TodoController.java">
 </file>
-<file name="D:\Spring Boot\todoapi\src\main\java\com\company\todoapp\controllers\TodoController.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-<error line="110" column="58" severity="error" message="Unnecessary parentheses around lambda value." source="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"/>
-</file>
-<file name="D:\Spring Boot\todoapi\src\main\java\com\company\todoapp\exceptions\TodoNotFoundException.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-</file>
-<file name="D:\Spring Boot\todoapi\src\main\java\com\company\todoapp\models\Todo.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-</file>
-<file name="D:\Spring Boot\todoapi\src\main\java\com\company\todoapp\repository\TodoJPARepository.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-</file>
-<file name="D:\Spring Boot\todoapi\src\main\java\com\company\todoapp\services\ITodoService.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-<error line="10" column="3" severity="error" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-<error line="12" column="3" severity="error" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-<error line="14" column="3" severity="error" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-<error line="16" column="3" severity="error" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-<error line="18" column="3" severity="error" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-<error line="20" column="3" severity="error" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-</file>
-<file name="D:\Spring Boot\todoapi\src\main\java\com\company\todoapp\services\repository\TodoDBService.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-</file>
-<file name="D:\Spring Boot\todoapi\src\main\java\com\company\todoapp\services\repository\TodoStaticService.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-</file>
-<file name="D:\Spring Boot\todoapi\src\main\java\com\company\todoapp\TodoappApplication.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-</file>
-<file name="D:\Spring Boot\todoapi\src\test\java\com\company\todoapp\TodoappApplicationTests.java">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-</file>
-<file name="D:\Spring Boot\todoapi\src\main\resources\application.properties">
-<error line="1" severity="error" message="Expected line ending for file is LF(\n), but CRLF(\r\n) is detected." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<file name="/Users/vijay/Desktop/Intelij/sample_workspace/todoapi/src/main/java/com/company/todoapp/services/ITodoService.java">
 </file>
 </checkstyle>
