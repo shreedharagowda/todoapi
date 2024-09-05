@@ -1,0 +1,52 @@
+version: '1.0'
+stages:
+  - checkout
+  - build
+  - test
+  - package
+  - deploy
+
+steps:
+  master_clone:
+    title: Cloning master repository...
+    type: git-clone
+    repo: "vijaynvb/todoapi"
+    revision: 'mongodb'
+    stage: checkout
+
+  build_maven:
+    title: Building Maven Project
+    type: freestyle
+    stage: build
+    image: maven:3.8.1-jdk-11  # Use a Maven Docker image with Java 11
+    working_directory: '${{master_clone}}'
+    commands:
+      - mvn clean install  # This builds the project and generates the JAR file
+
+  test_maven:
+    title: Running Maven Tests
+    type: freestyle
+    stage: test
+    image: maven:3.8.1-jdk-11
+    working_directory: '${{master_clone}}'
+    commands:
+      - mvn test  # This runs the tests
+
+  build_my_app:
+    title: Building Docker Image
+    type: build
+    stage: package
+    image_name: vijaynvb/todoapimysql
+    working_directory: '${{master_clone}}'
+    tag: 'master'
+    dockerfile: Dockerfile
+
+  deploy_to_k8s:
+      title: Deploying to Kubernetes
+      type: deploy
+      stage: deploy
+      kind: kubernetes
+      cluster: autopilot-cluster-1  # Kubernetes cluster name
+      namespace: my-app-namespace  # Kubernetes namespace
+      file_path: ./deployment.yaml
+      working_directory: '${{master_clone}}'
