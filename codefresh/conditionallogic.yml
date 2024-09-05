@@ -1,0 +1,56 @@
+version: '1.0'
+stages:
+  - checkout
+  - build
+  - test
+  - notify
+
+steps:
+  clone_repository:
+    title: Cloning Repository
+    type: git-clone
+    repo: "vijaynvb/todoapi"
+    revision: "master"
+    stage: checkout
+
+  build_maven:
+    title: Maven Build
+    type: freestyle
+    stage: build
+    image: maven:3.8.1-jdk-11
+    working_directory: '${{clone_repository}}'
+    commands:
+      - mvn clean install
+    when:
+      steps:
+        - name: clone_repository
+          on:
+            - success
+
+  test_maven:
+    title: Maven Test
+    type: freestyle
+    stage: test
+    image: maven:3.8.1-jdk-11
+    working_directory: '${{clone_repository}}'
+    commands:
+      - mvn test
+    when:
+      steps:
+        - name: build_maven
+          on:
+            - success
+    
+  notify_failure:
+      title: Notify Build Failure
+      type: freestyle
+      stage: notify
+      image: alpine:3.12
+      commands:
+        - echo "Build failed. Notifying user..."
+        - echo "Sending failure notification..."
+      when:
+        steps:
+          - name: build_maven
+            on:
+              - failure
