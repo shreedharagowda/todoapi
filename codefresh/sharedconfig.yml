@@ -1,0 +1,10 @@
+version: '1.0'
+steps:
+  step:
+    type: freestyle
+    arguments:
+      image: alpine
+      environment:
+        - SECRET=${{test}}
+      commands:
+        - echo $SECRET
