@@ -1,0 +1,31 @@
+version: '1.0'
+stages:
+  - checkout
+  - build
+  - package
+
+steps:
+  master_clone:
+    title: Cloning master repository...
+    type: git-clone
+    repo: "vijaynvb/todoapi"
+    revision: 'master'
+    stage: checkout
+
+  build_maven:
+    title: Building Maven Project
+    type: freestyle
+    stage: build
+    image: maven:3.8.1-jdk-11  # Use a Maven Docker image with Java 11
+    working_directory: '${{master_clone}}'
+    commands:
+      - mvn clean install  # This builds the project and generates the JAR file
+
+  build_my_app:
+    title: Building Docker Image
+    type: build
+    stage: package
+    image_name: vijaynvb/todoapimysql
+    working_directory: '${{master_clone}}'
+    tag: 'master'
+    dockerfile: Dockerfile
